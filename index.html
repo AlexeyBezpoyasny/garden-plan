@@ -6,7 +6,7 @@
 </head>
     <body>
         <div class="wrapper">
-            <img src="img/main.jpg" usemap="#image-map" id="image">
+            <img class="main-img" src="img/main.jpg" usemap="#image-map" id="image">
             <map name="image-map">
                 <area target="" alt="Фундук Трапезундський" title="Фундук Трапезундський" href="#" onclick="showPopup('funduct-trapesundskii'); return false;" coords="207,181,11" shape="circle">
                 <area target="" alt="Фундук Барселонський" title="Фундук Барселонський" href="#" onclick="showPopup('funduct-barselonskii'); return false;" coords="233,181,11" shape="circle">
@@ -270,6 +270,14 @@
         </div>
 
         <style>
+            .wrapper {
+                height: 100vh;
+            }
+
+            .main-img {
+                height: 100%;
+            }
+            
             .popup {
                 display: none;
                 position: fixed;
